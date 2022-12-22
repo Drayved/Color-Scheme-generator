@@ -20,12 +20,13 @@ function render(){
             const newColor = color.hex.value
             html += `
             <div class="colors" style="background:${newColor}">
-                <div class="colors-content">
-                    <div class="hex-values">
-                        <h3 class="value">${newColor}</h3>
-                    </div>
+                <div class="colors-content"></div>
+                <div class="hex-values">
+                    <h3 class="value">${newColor}</h3>
                 </div>
-            </div>`
+            </div>
+            
+            `
         })
       document.getElementById("colors-container").innerHTML = html
     })
