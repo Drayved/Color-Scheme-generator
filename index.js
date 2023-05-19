@@ -8,7 +8,7 @@ function render(){
     const colorOption = colorChoice.options[colorChoice.selectedIndex].value
     
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorSelector.value.slice(1)}&
-    format=json&mode=${colorOption}&count=10`)
+    format=json&mode=${colorOption}&count=5`)
     
     .then((res) => res.json())
     .then((data) => {
